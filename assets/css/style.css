@@ -1,0 +1,356 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Halvatica;
+    font-size: 16px;
+}
+html, body{
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+
+:root{
+    /* font sizes  */
+    --font-18: 18px;
+    --font-17: 17px;
+    --font-15: 15px;
+    --font-14: 14px;
+    --font-13: 13px;
+    --font-12: 12px;
+
+    /* colors  */
+    --black: #3c3c3c;
+    --white: rgb(241, 241, 241);
+}
+.font-18{
+    font-size: var(--font-18);
+}
+.font-17{
+    font-size: var(--font-17);
+}
+.font-15{
+    font-size: var(--font-15);
+}
+.font-14{
+    font-size: var(--font-14);
+}
+.font-13{
+    font-size: var(--font-13);
+}
+.font-12{
+    font-size: var(--font-12);
+}
+.bold-9{
+    font-weight: 900;
+}
+.bold-7{
+    font-weight: 700;
+}
+.bold-5{
+    font-weight: 500;
+}
+.bold-3{
+    font-weight: 300;
+}
+.ls-2{
+    letter-spacing: 2px;
+}
+
+.align-item-center{
+    align-items: center !important;
+}
+
+.btn-hover-warning:hover{
+    background-color: #ffc107;
+    border-color: #ffc107;
+    transition: 0.3s;
+    color: black;
+}
+.btn-hover-dark:hover{
+    background-color: black;
+    border-color: black;
+    transition: 0.3s;
+    color: white;
+}
+.main-wapper{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Click Animation  */
+.click-ani{
+    position: relative;
+    border-radius: 50px;
+    color: white;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  }
+  
+  .click-ani:hover {
+    transition-duration: 0.1s;
+  }
+  
+  .click-ani:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .click-ani:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .click-ani:active {
+    top: 1px;
+  }
+  
+  
+/* Click Animation  */
+
+.topbar{
+    width: 100%;
+    height: auto;
+    background-color: #b1b1b1;
+    text-align: center;
+    font-size: var(--font-14);
+    font-family: Halvatica;
+    font-weight: bold;
+}
+
+
+/* header start  */
+
+.navbar{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1070;
+    animation: slidedown 0.3s ;
+}
+.navbar-brand img{
+    height: 40px;
+}
+.navbar-nav .nav-item .nav-link{
+    position: relative;
+}
+.navbar-nav > .nav-item > .nav-link::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(255, 196, 0);
+    transition: 0.4s ease-in-out;
+}
+.navbar-nav > .nav-item > .nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(255, 196, 0);
+    transition: 0.4s ease-in-out;
+}
+.navbar-nav .nav-item .nav-link:hover:before{
+    width: 100%;
+}   
+.navbar-nav .nav-item .nav-link:hover:after{
+    width: 100%;
+}   
+
+.dpdown{
+    position: relative;
+    /* z-index: 9999; */
+}
+.dpdown .dropdown-menu{
+    position: absolute;
+    left: 0;
+    display: none;
+    /* z-index: 9999; */
+    border: none;
+    width: 200px;
+    background: transparent;
+}
+.dpdown .dropdown-menu .dropdown-menu-inner{
+    border-radius: 0;
+    padding: 0;
+    padding-top: 10px;
+    background: white;
+    width: 100%;
+    clip-path: polygon(15% 0, 20% 10px, 100% 10px, 100% 100%, 0 100%, 0 10px, 10% 10px);
+}
+.dpdown .dropdown-menu li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.267);
+}
+.dpdown .dropdown-menu li:last-child{
+    border-bottom: 1px solid transparent;
+}
+.dpdown .dropdown-menu li a{
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    padding: 10px;
+}
+.dpdown .dropdown-menu li a:hover{
+    color: gray;
+}
+.dpdown:hover .dropdown-menu{
+    display: block;
+    animation: downtotop 0.2s linear;
+}
+@keyframes downtotop {
+    0%{
+        margin-top: 20px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+.icon-cart, .icon-search, .icon-signin{
+    cursor: pointer;
+}
+.icon-signin svg, .icon-search svg, .sm-icon-search svg{
+    color: white;
+    fill: white;
+    width: 20px;
+}
+.icon-search.icon-search-dark svg{
+    color: black;
+    fill: black;
+}
+.icon-cart svg{
+    color: white;
+    fill: white;
+    width: 25px;
+}
+
+    /* search  */
+    .search-zoom{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background: white;
+        height: 400px;
+        max-height: 400px;
+        overflow: auto;
+        z-index: 3000;
+        display: none;
+    }
+    .search-zoom::-webkit-scrollbar{
+        width: 0;
+        background-color: transparent;
+    }
+    .search-zoom .search-input{
+        width: 100%;
+        text-align: center;
+        height: 80px;
+        outline: none;
+        border: none;
+        background: rgb(223, 223, 223);
+        animation: zoomIn 0.4s ease;
+    }
+    .search-zoom .search-btn-group{
+        width: 200px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    @keyframes zoomIn {
+        from {
+          opacity: 0;
+          transform: scale3d(0.3, 0.3, 0.3);
+        }
+      
+        50% {
+          opacity: 1;
+        }
+      }
+      
+      .zoomIn {
+        animation-name: zoomIn;
+      }
+    /* search  */
+
+    /* Side bar  */
+        .overlay{
+            height: 100%;
+            width: 100%;
+            position: fixed; 
+            top: 0;
+            display: none;
+            z-index: 2090;  
+            background-color: #3c3c3c63; 
+        }
+        .overlay-search{
+            height: 100%;
+            width: 100%;
+            position: fixed; 
+            top: 0;
+            display: none;
+            z-index: 1060;  
+            background-color: #3c3c3c63; 
+        }
+        .sidebar{
+            position: fixed;
+            top: 0;
+            right: -400px;
+            background: white;
+            border: 1px solid rgba(156, 156, 156, 0.301);
+            z-index: 3000;
+            width: 400px;
+            max-width: 90%;
+            height: 100vh;
+            padding: 20px;
+            transition: 0.4s;
+        }
+        #signin form div input{
+            border: 1px solid rgb(179, 178, 178);
+            font-size: 12px;
+            height: 45px;
+            outline: none;
+            padding: 10px;
+        }
+
+    /* Side bar  */
+/* header end  */
+
+/* banner section start  */
+.banner{
+    height: 80vh;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 52% 97%, 50% 100%, 48% 97%, 0 97%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* banner section end  */
