@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dress Makers</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
@@ -24,7 +25,7 @@
         <section class="">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark ps-lg-4 pe-lg-4 justify-content-between">
                 <div class="sm-toggler sm-icon-search d-block d-md-block d-lg-none text-light d-flex">
-                    <button class="btn text-light"><i class="fas fa-bars font-18"></i></button>
+                    <button class="btn text-light toggle-menu"><i class="fas fa-bars font-18"></i></button>
                     <button class="btn d-block d-md-none d-lg-none sm-icon-search icon-search">
                         <svg data-icon="search" viewBox="0 0 512 512" width="100%" height="100%">
                             <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
@@ -34,7 +35,7 @@
                 <a class="navbar-brand" href="#"><img src="assets/images/logo/white-trans-Header.webp" alt="Logo"></a>
                 <ul class="navbar-nav m-auto d-flex align-item-center">
                         <li class="nav-item ms-3 me-3 font-14">
-                            <a class="nav-link text-light bold-7 ls-2" href="#">Shop</a>
+                            <a class="nav-link text-light bold-7 ls-2" href="shop.html">Shop</a>
                         </li>
                         <li class="nav-item dpdown ms-3 me-3 font-14">
                             <a class="nav-link text-light bold-7 ls-2" href="#">Men</a>
@@ -189,9 +190,91 @@
                     </div>
             </nav>
         </section>
+
         <div class="overlay-search" id="overlay-search">
         </div>
         <!-- sidebar section start -->
+            <!-- nav sidebar  -->
+            <div class="nav-sidebar" id="nav-sidebar">
+                <div class="logo text-center d-flex justify-content-between">
+                    <div class="text-center">
+                        <img src="assets/images/logo/white-trans-Header.webp" alt="" height="40">
+                    </div>
+                    <button class="btn text-light nav-dismiss"><i class="fas fa-times font-18"></i></button>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link text-light">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link text-light d-flex justify-content-between"><span>Men</span><i class="fas fa-chevron-down"></i></a>
+                        <ul class="navbar-nav dp-content">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Pant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Polo T-Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Kabli Panjabi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Winter Clothing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Underwear</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Sport Dress</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Shoes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link text-light d-flex justify-content-between"><span>Women</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="navbar-nav dp-content">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Tops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Ladies Pant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Ladies T-Shirt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link text-light d-flex justify-content-between"><span>Baby</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="navbar-nav dp-content">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Baby Shirt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Baby Pant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Baby Polo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Girl Tops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light">Baby Kabli Panjabi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- nav sidebar  -->
                 <!-- signin sidebar -->
                     <div class="overlay" id="overlay">
                     </div>
@@ -202,6 +285,46 @@
                             </h4>
                             <button class="btn text-dark" id="cart-dismiss"><i class="fas fa-times"></i></button>
                         </div>
+                        <div class="text-muted pt-3 pb-3">2 Products</div>
+                        <div class="cart-product mb-3 border p-1 pt-2 pb-2 d-flex justify-content-between">
+                            <div class="image">
+                                <img src="assets/images/products/1263a_600x.webp" alt="">
+                            </div>
+                            <div class="p-2">
+                                <div class="name font-12">Cotton Stretch Full Shirt</div>
+                                <button class="btn btn-sm"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm">M</button>
+                                <input type="number" class="border border-muted" value="1" style="width: 50px; outline: none;">
+                            </div>
+                            <div class="text-end">
+                                <div class="price">
+                                    <p class="text-muted"><del class="font-12">1850.00৳</del></p>
+                                    <p class="text-danger font-12">1550.00৳</p>
+                                </div>
+                                <button class="btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="cart-product mb-3 border p-1 pt-2 pb-2 d-flex justify-content-between">
+                            <div class="image">
+                                <img src="assets/images/products/1263a_600x.webp" alt="">
+                            </div>
+                            <div class="p-2">
+                                <div class="name font-12">Cotton Stretch Full Shirt</div>
+                                <button class="btn btn-sm"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-sm">M</button>
+                                <input type="number" class="border border-muted" value="1" style="width: 50px; outline: none;">
+                            </div>
+                            <div class="text-end">
+                                <div class="price">
+                                    <p class="text-muted"><del class="font-12">1850.00৳</del></p>
+                                    <p class="text-danger font-12">1550.00৳</p>
+                                </div>
+                                <button class="btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="p-2"></div>
+                        <button class="btn btn-dark btn-hover-warning col-12 mb-3">Place Order</button>
+                        <button class="btn btn-warning btn-hover-dark col-12 mb-3">Continue Shopping</button>
                     </div>
                     <div class="sidebar" id="signin">
                         <div class="d-flex justify-content-between mt-2">
@@ -236,38 +359,1540 @@
                             <p>Or</p>
                         </div>
                         <div class="mb-4 ms-2 text-center">
-                            <a href="#" class="btn btn-warning col-12 btn-hover-dark">Create Account</a>
+                            <a href="register.html" class="btn btn-warning col-12 btn-hover-dark">Create Account</a>
                         </div>
                     </div>
                 <!-- signin sidebar -->
-
-
+       
         <!-- sidebar section end -->
         
         <!-- navbar section end  -->
         
         <!-- banner section start  -->
+                                            <!-- Page CSS Load Link  -->
+        <link rel="stylesheet" href="assets/css/home.css">                                    
+        <link rel="stylesheet" href="assets/css/singleproduct.css">                                    
+                                            <!-- Page CSS Load Link  -->
         <section>
             <div class="banner" style="background-image: url(assets/images/banners/Cover_w.webp);">
             </div>
             
         </section>
         <!-- banner section end  -->
+        <section>
+            <div class="container-fluid mt-5">
+                <div class="owl-carousel categories-carousel">
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Shirt.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Shirt
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Ladies-Pant.avif" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Pants
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Polo-T-Shirt.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Polo T-Shirts
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/T-Shirt.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                T-Shirt
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Kabli-Panjabi.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Kabli-Panjabi
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/winter.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Winter Clothing
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Underwear.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Underwear
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Sports-Dress.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Sport Dress
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Tops_250x_08f4d2f7-77b5-4d47-8eb2-c0a8188d312b.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Tops
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Ladies-Pant (1).avif" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Ladies Pant
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Ladies-T-Shirt.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Ladies T-Shirt
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Baby-Shirt.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Baby Shirt
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Baby-Pant.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Baby Pant
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/baby_tshirt.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Baby T-Shirt
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Baby-Polo.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Baby Polo
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Girls-Tops.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Girls Tops
+                            </p>
+                        </a>
+                    </div>
+                    <div class="category text-center">
+                        <a href="#" class="text-decoration-none">
+                            <div class="image text-center m-auto">
+                                <img src="assets/images/category/Kids-Kabli-Panjabi.webp" alt="" class="col-12">
+                            </div>
+                            <p class="text-secondary">
+                                Kids Kabli Panjabi
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="m-5"></div>
-        <div class="p-5"></div>
-        <div class="m-5"></div>
-        <div class="p-5"></div>
-        <div class="m-5"></div>
-        <div class="p-5"></div>
-        <div class="m-5"></div>
-        <div class="p-5"></div>
-        <div class="m-5"></div>
+        <!-- NEW ARRIVALS Section start  -->
+        <section>
+            <div class="container-fluid mt-5">
+                <div class="liner-continer">
+                    <h4 class="title bold-9">NEW ARRIVALS</h4> 
+                </div>
+
+                <div class="products row mt-4">
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                       <div class="product">
+                        <div class="discount-tag">
+                            48%                        
+                        </div>
+                        <div class="extra-tag">
+                            New                        
+                        </div>
+                            <div class="p-size-img mb-2">
+                                <a href="shop.html" class="image">
+                                    <img src="assets/images/products/1263a_600x.webp" alt="">
+                                    
+                                </a>
+                                <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                        Quick View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                <div class="d-flex justify-content-center sizes">
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                </div>
+                            </div>
+                            <div class="product-details mt-2 text-center">
+                                <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                <div class="price d-flex justify-content-center">
+                                    <del class="text-muted font-14">1450.00 ৳</del>
+                                    <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                <div class="order-now pt-1 border border-muted bg-light">
+                                    <div class="position-relative">
+                                        <button class="btn btn-danger position-absolute top-0 end-0 rounded-circle btn-sm order-close"> x </button>
+                                    <div class="size-view col-12">
+                                        <div class="d-flex justify-content-center sizes">
+                                            <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                            <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                            <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                            <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                            <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                        </div>
+                                    </div>
+                                    <div class="quantity-product text-center pt-2">
+                                        <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                        <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                        <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                                    </div>
+                                    <div class="order-button text-center pt-2 pb-2">
+                                        <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                                    </div>
+                                    </div>
+                            </div>
+                            </div>
+                            
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                       <div class="product">
+                        <div class="discount-tag">
+                            48%                        
+                        </div>
+                        <div class="extra-tag">
+                            New                        
+                        </div>
+                            <div class="p-size-img mb-2">
+                                <a href="shop.html" class="image">
+                                    <img src="assets/images/products/1263a_600x.webp" alt="">
+                                    
+                                </a>
+                                <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                        Quick View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                <div class="d-flex justify-content-center sizes">
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                </div>
+                            </div>
+                            <div class="product-details mt-2 text-center">
+                                <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                <div class="price d-flex justify-content-center">
+                                    <del class="text-muted font-14">1450.00 ৳</del>
+                                    <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                <div class="order-now pt-1 border border-muted bg-light">
+                             <div class="size-view col-12">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="quantity-product text-center pt-2">
+                                 <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                 <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                 <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                             </div>
+                             <div class="order-button text-center pt-2 pb-2">
+                                 <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                             </div>
+                            </div>
+                            </div>
+                            
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                       <div class="product">
+                        <div class="discount-tag">
+                            48%                        
+                        </div>
+                        <div class="extra-tag">
+                            New                        
+                        </div>
+                            <div class="p-size-img mb-2">
+                                <a href="shop.html" class="image">
+                                    <img src="assets/images/products/1263a_600x.webp" alt="">
+                                    
+                                </a>
+                                <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                        Quick View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                <div class="d-flex justify-content-center sizes">
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                </div>
+                            </div>
+                            <div class="product-details mt-2 text-center">
+                                <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                <div class="price d-flex justify-content-center">
+                                    <del class="text-muted font-14">1450.00 ৳</del>
+                                    <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                <div class="order-now pt-1 border border-muted bg-light">
+                                    <div class="size-view col-12">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    </div>
+                                    <div class="quantity-product text-center pt-2">
+                                    <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                    <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                    <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                                    </div>
+                                    <div class="order-button text-center pt-2 pb-2">
+                                    <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                       <div class="product">
+                        <div class="discount-tag">
+                            48%                        
+                        </div>
+                        <div class="extra-tag">
+                            New                        
+                        </div>
+                            <div class="p-size-img mb-2">
+                                <a href="shop.html" class="image">
+                                    <img src="assets/images/products/1263a_600x.webp" alt="">
+                                    
+                                </a>
+                                <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                        Quick View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                <div class="d-flex justify-content-center sizes">
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                </div>
+                            </div>
+                            <div class="product-details mt-2 text-center">
+                                <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                <div class="price d-flex justify-content-center">
+                                    <del class="text-muted font-14">1450.00 ৳</del>
+                                    <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                <div class="order-now pt-1 border border-muted bg-light">
+                             <div class="size-view col-12">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="quantity-product text-center pt-2">
+                                 <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                 <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                 <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                             </div>
+                             <div class="order-button text-center pt-2 pb-2">
+                                 <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                             </div>
+                            </div>
+                            </div>
+                            
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                       <div class="product">
+                        <div class="discount-tag">
+                            48%                        
+                        </div>
+                        <div class="extra-tag">
+                            New                        
+                        </div>
+                            <div class="p-size-img mb-2">
+                                <a href="shop.html" class="image">
+                                    <img src="assets/images/products/1263a_600x.webp" alt="">
+                                    
+                                </a>
+                                <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                        Quick View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                <div class="d-flex justify-content-center sizes">
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                </div>
+                            </div>
+                            <div class="product-details mt-2 text-center">
+                                <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                <div class="price d-flex justify-content-center">
+                                    <del class="text-muted font-14">1450.00 ৳</del>
+                                    <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                <div class="order-now pt-1 border border-muted bg-light">
+                             <div class="size-view col-12">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="quantity-product text-center pt-2">
+                                 <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                 <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                 <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                             </div>
+                             <div class="order-button text-center pt-2 pb-2">
+                                 <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                             </div>
+                            </div>
+                            </div>
+                            
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                       <div class="product">
+                        <div class="discount-tag">
+                            48%                        
+                        </div>
+                        <div class="extra-tag">
+                            New                        
+                        </div>
+                            <div class="p-size-img mb-2">
+                                <a href="shop.html" class="image">
+                                    <img src="assets/images/products/1263a_600x.webp" alt="">
+                                    
+                                </a>
+                                <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                        Quick View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                <div class="d-flex justify-content-center sizes">
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                </div>
+                            </div>
+                            <div class="product-details mt-2 text-center">
+                                <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                <div class="price d-flex justify-content-center">
+                                    <del class="text-muted font-14">1450.00 ৳</del>
+                                    <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                <div class="order-now pt-1 border border-muted bg-light">
+                             <div class="size-view col-12">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="quantity-product text-center pt-2">
+                                 <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                 <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                 <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                             </div>
+                             <div class="order-button text-center pt-2 pb-2">
+                                 <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                             </div>
+                            </div>
+                            </div>
+                            
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                       <div class="product">
+                        <div class="discount-tag">
+                            48%                        
+                        </div>
+                        <div class="extra-tag">
+                            New                        
+                        </div>
+                            <div class="p-size-img mb-2">
+                                <a href="shop.html" class="image">
+                                    <img src="assets/images/products/1263a_600x.webp" alt="">
+                                    
+                                </a>
+                                <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                        Quick View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                <div class="d-flex justify-content-center sizes">
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                </div>
+                            </div>
+                            <div class="product-details mt-2 text-center">
+                                <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                <div class="price d-flex justify-content-center">
+                                    <del class="text-muted font-14">1450.00 ৳</del>
+                                    <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                <div class="order-now pt-1 border border-muted bg-light">
+                             <div class="size-view col-12">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="quantity-product text-center pt-2">
+                                 <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                 <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                 <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                             </div>
+                             <div class="order-button text-center pt-2 pb-2">
+                                 <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                             </div>
+                            </div>
+                            </div>
+                            
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                       <div class="product">
+                        <div class="discount-tag">
+                            48%                        
+                        </div>
+                        <div class="extra-tag">
+                            New                        
+                        </div>
+                            <div class="p-size-img mb-2">
+                                <a href="shop.html" class="image">
+                                    <img src="assets/images/products/1263a_600x.webp" alt="">
+                                    
+                                </a>
+                                <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                    <div class="d-flex justify-content-center sizes">
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                        <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                    </div>
+                                    <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                        Quick View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                <div class="d-flex justify-content-center sizes">
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                    <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                </div>
+                            </div>
+                            <div class="product-details mt-2 text-center">
+                                <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                <div class="price d-flex justify-content-center">
+                                    <del class="text-muted font-14">1450.00 ৳</del>
+                                    <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                <div class="order-now pt-1 border border-muted bg-light">
+                             <div class="size-view col-12">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="quantity-product text-center pt-2">
+                                 <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                 <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                 <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                             </div>
+                             <div class="order-button text-center pt-2 pb-2">
+                                 <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                             </div>
+                            </div>
+                            </div>
+                            
+                       </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="container-fluid mt-5">
+                <div class="liner-continer">
+                    <h4 class="title bold-9">Shirts</h4> 
+                </div>
+
+                <div class="products row mt-4">
+                    
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                        <div class="product">
+                         <div class="discount-tag">
+                             48%                        
+                         </div>
+                         <div class="extra-tag">
+                             New                        
+                         </div>
+                             <div class="p-size-img mb-2">
+                                 <a href="shop.html" class="image">
+                                     <img src="assets/images/products/1263a_600x.webp" alt="">
+                                     
+                                 </a>
+                                 <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                     <div class="d-flex justify-content-center sizes">
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                     </div>
+                                     <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                         Quick View
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="product-details mt-2 text-center">
+                                 <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                 <div class="price d-flex justify-content-center">
+                                     <del class="text-muted font-14">1450.00 ৳</del>
+                                     <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                 </div>
+                                 <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                 <div class="order-now pt-1 border border-muted bg-light">
+                              <div class="size-view col-12">
+                                  <div class="d-flex justify-content-center sizes">
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                  </div>
+                              </div>
+                              <div class="quantity-product text-center pt-2">
+                                  <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                  <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                  <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                              </div>
+                              <div class="order-button text-center pt-2 pb-2">
+                                  <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                              </div>
+                             </div>
+                             </div>
+                             
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                        <div class="product">
+                         <div class="discount-tag">
+                             48%                        
+                         </div>
+                         <div class="extra-tag">
+                             New                        
+                         </div>
+                             <div class="p-size-img mb-2">
+                                 <a href="shop.html" class="image">
+                                     <img src="assets/images/products/1263a_600x.webp" alt="">
+                                     
+                                 </a>
+                                 <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                     <div class="d-flex justify-content-center sizes">
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                     </div>
+                                     <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                         Quick View
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="product-details mt-2 text-center">
+                                 <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                 <div class="price d-flex justify-content-center">
+                                     <del class="text-muted font-14">1450.00 ৳</del>
+                                     <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                 </div>
+                                 <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                 <div class="order-now pt-1 border border-muted bg-light">
+                              <div class="size-view col-12">
+                                  <div class="d-flex justify-content-center sizes">
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                  </div>
+                              </div>
+                              <div class="quantity-product text-center pt-2">
+                                  <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                  <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                  <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                              </div>
+                              <div class="order-button text-center pt-2 pb-2">
+                                  <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                              </div>
+                             </div>
+                             </div>
+                             
+                        </div>
+                     </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                        <div class="product">
+                         <div class="discount-tag">
+                             48%                        
+                         </div>
+                         <div class="extra-tag">
+                             New                        
+                         </div>
+                             <div class="p-size-img mb-2">
+                                 <a href="shop.html" class="image">
+                                     <img src="assets/images/products/1263a_600x.webp" alt="">
+                                     
+                                 </a>
+                                 <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                     <div class="d-flex justify-content-center sizes">
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                     </div>
+                                     <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                         Quick View
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="product-details mt-2 text-center">
+                                 <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                 <div class="price d-flex justify-content-center">
+                                     <del class="text-muted font-14">1450.00 ৳</del>
+                                     <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                 </div>
+                                 <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                 <div class="order-now pt-1 border border-muted bg-light">
+                              <div class="size-view col-12">
+                                  <div class="d-flex justify-content-center sizes">
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                  </div>
+                              </div>
+                              <div class="quantity-product text-center pt-2">
+                                  <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                  <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                  <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                              </div>
+                              <div class="order-button text-center pt-2 pb-2">
+                                  <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                              </div>
+                             </div>
+                             </div>
+                             
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                        <div class="product">
+                         <div class="discount-tag">
+                             48%                        
+                         </div>
+                         <div class="extra-tag">
+                             New                        
+                         </div>
+                             <div class="p-size-img mb-2">
+                                 <a href="shop.html" class="image">
+                                     <img src="assets/images/products/1263a_600x.webp" alt="">
+                                     
+                                 </a>
+                                 <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                     <div class="d-flex justify-content-center sizes">
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                     </div>
+                                     <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                         Quick View
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="product-details mt-2 text-center">
+                                 <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                 <div class="price d-flex justify-content-center">
+                                     <del class="text-muted font-14">1450.00 ৳</del>
+                                     <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                 </div>
+                                 <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                 <div class="order-now pt-1 border border-muted bg-light">
+                              <div class="size-view col-12">
+                                  <div class="d-flex justify-content-center sizes">
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                  </div>
+                              </div>
+                              <div class="quantity-product text-center pt-2">
+                                  <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                  <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                  <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                              </div>
+                              <div class="order-button text-center pt-2 pb-2">
+                                  <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                              </div>
+                             </div>
+                             </div>
+                             
+                        </div>
+                     </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                        <div class="product">
+                         <div class="discount-tag">
+                             48%                        
+                         </div>
+                         <div class="extra-tag">
+                             New                        
+                         </div>
+                             <div class="p-size-img mb-2">
+                                 <a href="shop.html" class="image">
+                                     <img src="assets/images/products/1263a_600x.webp" alt="">
+                                     
+                                 </a>
+                                 <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                     <div class="d-flex justify-content-center sizes">
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                     </div>
+                                     <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                         Quick View
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="product-details mt-2 text-center">
+                                 <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                 <div class="price d-flex justify-content-center">
+                                     <del class="text-muted font-14">1450.00 ৳</del>
+                                     <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                 </div>
+                                 <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                 <div class="order-now pt-1 border border-muted bg-light">
+                              <div class="size-view col-12">
+                                  <div class="d-flex justify-content-center sizes">
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                  </div>
+                              </div>
+                              <div class="quantity-product text-center pt-2">
+                                  <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                  <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                  <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                              </div>
+                              <div class="order-button text-center pt-2 pb-2">
+                                  <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                              </div>
+                             </div>
+                             </div>
+                             
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                        <div class="product">
+                         <div class="discount-tag">
+                             48%                        
+                         </div>
+                         <div class="extra-tag">
+                             New                        
+                         </div>
+                             <div class="p-size-img mb-2">
+                                 <a href="shop.html" class="image">
+                                     <img src="assets/images/products/1263a_600x.webp" alt="">
+                                     
+                                 </a>
+                                 <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                     <div class="d-flex justify-content-center sizes">
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                     </div>
+                                     <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                         Quick View
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="product-details mt-2 text-center">
+                                 <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                 <div class="price d-flex justify-content-center">
+                                     <del class="text-muted font-14">1450.00 ৳</del>
+                                     <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                 </div>
+                                 <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                 <div class="order-now pt-1 border border-muted bg-light">
+                              <div class="size-view col-12">
+                                  <div class="d-flex justify-content-center sizes">
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                  </div>
+                              </div>
+                              <div class="quantity-product text-center pt-2">
+                                  <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                  <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                  <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                              </div>
+                              <div class="order-button text-center pt-2 pb-2">
+                                  <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                              </div>
+                             </div>
+                             </div>
+                             
+                        </div>
+                     </div>
+                    <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                        <div class="product">
+                         <div class="discount-tag">
+                             48%                        
+                         </div>
+                         <div class="extra-tag">
+                             New                        
+                         </div>
+                             <div class="p-size-img mb-2">
+                                 <a href="shop.html" class="image">
+                                     <img src="assets/images/products/1263a_600x.webp" alt="">
+                                     
+                                 </a>
+                                 <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                     <div class="d-flex justify-content-center sizes">
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                     </div>
+                                     <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                         Quick View
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="product-details mt-2 text-center">
+                                 <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                 <div class="price d-flex justify-content-center">
+                                     <del class="text-muted font-14">1450.00 ৳</del>
+                                     <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                 </div>
+                                 <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                 <div class="order-now pt-1 border border-muted bg-light">
+                              <div class="size-view col-12">
+                                  <div class="d-flex justify-content-center sizes">
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                  </div>
+                              </div>
+                              <div class="quantity-product text-center pt-2">
+                                  <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                  <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                  <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                              </div>
+                              <div class="order-button text-center pt-2 pb-2">
+                                  <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                              </div>
+                             </div>
+                             </div>
+                             
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-12 product-col mb-3">
+                        <div class="product">
+                         <div class="discount-tag">
+                             48%                        
+                         </div>
+                         <div class="extra-tag">
+                             New                        
+                         </div>
+                             <div class="p-size-img mb-2">
+                                 <a href="shop.html" class="image">
+                                     <img src="assets/images/products/1263a_600x.webp" alt="">
+                                     
+                                 </a>
+                                 <div class="size-view col-12 d-md-none d-lg-block d-none">
+                                     <div class="d-flex justify-content-center sizes">
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                         <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                     </div>
+                                     <div class="quick-view"  data-bs-toggle="modal" data-bs-target="#quick-view">
+                                         Quick View
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="size-view col-12 d-md-block d-lg-none d-block">
+                                 <div class="d-flex justify-content-center sizes">
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                     <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                 </div>
+                             </div>
+                             <div class="product-details mt-2 text-center">
+                                 <a href="shop.html" class="text-decoration-none text-dark font-14">Cotton Stretch Full Shirt</a>
+                                 <div class="price d-flex justify-content-center">
+                                     <del class="text-muted font-14">1450.00 ৳</del>
+                                     <strong class="text-danger ps-2 font-14">950.00 ৳</strong>
+                                 </div>
+                                 <button class="btn btn-outline-dark col-12 buy-now">Buy Now</button>
+                                 <div class="order-now pt-1 border border-muted bg-light">
+                              <div class="size-view col-12">
+                                  <div class="d-flex justify-content-center sizes">
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">S</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">M</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">L</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XL</div>
+                                      <div class="border border-dark bg-light rounded-circle font-12 pt-1">XXL</div>
+                                  </div>
+                              </div>
+                              <div class="quantity-product text-center pt-2">
+                                  <button class="btn-dark btn rounded-circle btn-sm">-</button>
+                                  <input type="text" class="border-dark border ps-2 pe-2 text-center" value="1">
+                                  <button class="btn-dark btn rounded-circle btn-sm">+</button>
+                              </div>
+                              <div class="order-button text-center pt-2 pb-2">
+                                  <button class="btn btn-outline-dark btn-sm">Order Now</button>
+                              </div>
+                             </div>
+                             </div>
+                             
+                        </div>
+                     </div>
+                     
+
+                    
+                </div>
+            </div>
+        </section>
+        <!-- NEW ARRIVALS Section end  -->
+
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="quick-view" tabindex="1"  data-bs-keyboard="true" role="dialog" aria-labelledby="quick" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="quick">Quick View Product</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="assets/images/products/1263a_600x.webp" alt="" class="col-12">
+                            </div>
+                            <div class="col-lg-7">
+                                <a href="product.html" class="text-decoration-none text-dark">
+                                    <h4 class="title bold-7">Cotton Stretch Full Shirt</h4>
+                                </a>
+                                <table>
+                                    <tr>
+                                        <td class="font-12">Brand : </td>
+                                        <td class="ps-1 font-12">Dressmaker</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-12">SKU : </td>
+                                        <td class="ps-1 font-12">1460</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-12">Availability: </td>
+                                        <td class="ps-1 font-12"> 95 in stock</td>
+                                    </tr>
+                                </table>
+                                <div class="price mt-3">
+                                    <del class="font-18 text-muted bold-7">TK 1800.00</del>
+                                    <span class="text-danger bold-7">TK 1500.00</span>
+                                </div>
+                                <div class="product-details font-12 mt-4">
+                                    Fabric: 95% Cotton, 5% STRETCH S Chest 40 Length 29 Collar 15 (Slim fit) M Chest 42 Length 30 Collar ...
+                                </div>
+                                <div class="size-view modal-size col-12">
+                                    <div class="d-flex justify-content-between">
+                                        <h4><b>Size <span class="text-danger">*</span> S</b></h4>
+                                        <!-- <button class="btn" data-bs-target="size-guide" data-bs-toggle="modal"><i class="fas fa-ruler"></i> Size Guide</button> -->
+                                    </div>
+                                    <div class="d-flex sizes">
+                                        <div class="border bg-light rounded-circle font-12 pt-2 active">S</div>
+                                        <div class="border bg-light rounded-circle font-12 pt-2">M</div>
+                                        <div class="border bg-light rounded-circle font-12 pt-2">L</div>
+                                        <div class="border bg-light rounded-circle font-12 pt-2">XL</div>
+                                        <div class="border bg-light rounded-circle font-12 pt-2">XXL</div>
+                                    </div>
+                                </div>
+                                <div class="quantity d-flex mt-2">
+                                    <button class="btn btn-outline-dark">-</button>
+                                    <input type="number" class="border border-muted text-center" value="1">
+                                    <button class="btn btn-outline-dark">+</button>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 mt-2">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-lg" id="size-guide" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId">Size Guide</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="table-responsive">
+                                <table class="table
+                                table-hover
+                                table-muted
+                                align-middle
+                                text-center">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>SIZE</th>
+                                            <th>CHEST</th>
+                                            <th>LENGTH</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr class="" >
+                                                <td scope="row">M</td>
+                                                <td>38"-40"</td>
+                                                <td>27’’</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td scope="row">L</td>
+                                                <td>41"-42"</td>
+                                                <td>28"</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td scope="row">XL</td>
+                                                <td>43"-44"</td>
+                                                <td>28.5"</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td scope="row">XXL</td>
+                                                <td>44"-46"</td>
+                                                <td>30"</td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- footer section start  -->
+        <footer>
+            <div class="row border border-muted border-end-0 border-start-0 border-top-0 mt-5">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <img src="assets/images/logo/white-trans-Header.webp" alt="logo" height="30">
+                    <p class="text-start">
+                        House-6, Road-6, Block- A, Section-10, Benarashi Palli, Mirpur
+                        
+                    </p>
+                    <p class="text-start">Dhaka-1216
+                        Bangladesh</p>
+                    <p class="text-start">Call us: 01918517574</p>
+                    <p class="text-start">Email: support@dressmaker.com.bd</p>
+                </div>
+                <div class="dec-acc d-block d-md-none d-lg-none">
+                    <div class="accordion discription m-auto footer-menu-col  border border-end-0 border-start-0 border-muted">
+                                    
+                                
+                        <a href="#fshop" class="ac-btn d-flex justify-content-between text-start active align-items-center">
+                            <p>Shop by</p>
+                            <span class="text-light d-lg-none d-md-block d-block"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul id="fshop" class="tab-content2">
+                            <li><a href="contact.html">Shop</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Baby</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordion discription m-auto footer-menu-col border border-end-0 border-start-0 border-muted">
+                            
+                        
+                        <a href="#finfo" class="ac-btn d-flex justify-content-between text-start align-items-center">
+                            <p>Information</p>
+                            <span class="text-light d-lg-none d-md-block d-block"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul id="finfo" class="tab-content2">
+                            <li><a href="dashboard.html">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordion discription m-auto footer-menu-col  border border-end-0 border-start-0 border-muted">
+                        
+                        
+                        <a href="#faccount" class="ac-btn d-flex justify-content-between align-items-center">
+                            <p>My Account</p>
+                            <span class="text-light d-lg-none d-md-block d-block"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <ul id="faccount" class="tab-content2">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="privacy-policy.html">My Account</a></li>
+                            <li><a href="terms.html">Order History</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12 footer-menu-box d-none d-md-block d-lg-block">
+                    <div class="d-lg-flex justify-content-between">
+                        <div class="footer-menu-col">
+                            <a href="#" class="text-light ps-2 ms-1"><b>Shop by</b></a>
+                                
+                                <ul>
+                                    <li><a href="contact.html">Shop</a></li>
+                                    <li><a href="#">Men</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Baby</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
+                            </div>
+                        <div class="footer-menu-col">
+                            <a href="#" class="text-light ps-2 ms-1"><b>Information</b></a>
+                                
+                            <ul>
+                                <li><a href="dashboard.html">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu-col">
+                            <a href="#" class="text-light ps-2 ms-1"><b>My Account</b></a>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="privacy-policy.html">My Account</a></li>
+                                <li><a href="terms.html">Order History</a></li>
+                            </ul>
+                        </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-12">
+                        <div class="footer-menu-col">
+                        <a href="#" class="text-light ps-0"><b>Newsletter Sign Up</b></a>
+                        <p class="text-muted font-13">
+                            Receive our latest updates about our products and promotions.
+                        </p>
+                        <form action="" class="mt-3">
+                            <div class="mb-3">
+                                <input type="text" placeholder="Your E-mail" class="form-control">
+                                <button class="text-center p-1 col-12 btn-hover-warning btn btn-warning mt-3"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons text-start pt-3 pb-3">
+                <a href="#" class="m-1 btn btn-circle btn-dark text-light">
+                    <span>
+                        <i class="fab fa-facebook-f"></i>
+                    </span>
+                </a>
+                <a href="#" class="m-1 btn btn-circle btn-dark text-light">
+                    <span>
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </a>
+                <a href="#" class="m-1 btn btn-circle btn-dark text-light">
+                    <span>
+                        <i class="fab fa-pinterest-p"></i>
+                    </span>
+                </a>
+                <a href="#" class="m-1 btn btn-circle btn-dark text-light">
+                    <span>
+                        <i class="fab fa-linkedin-in"></i>
+                    </span>
+                </a>
+                <a href="#" class="m-1 btn btn-circle btn-dark text-light">
+                    <span>
+                        <i class="fab fa-telegram-plane"></i>
+                    </span>
+                </a>
+            </div>
+        </footer>
+        <div class="copyright bg-dark text-light text-lg-start text-md-center text-center p-0 m-0">
+            <p class="font-13 ps-2 p-0 m-0">
+                Dressmaker © 2022 All right reserved. Design & Developed by <a href="#" class="text-dark text-decoration-none">
+                    Advert Limited
+                </a>
+            </p>
+        </div>
+        <!-- footer section end  -->
     </div>
 
 
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
-
+    
 
 </body>
 </html>

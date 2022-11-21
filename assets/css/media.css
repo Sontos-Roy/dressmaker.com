@@ -9,20 +9,34 @@
       --font-12: 11px;
   
     }
-    .navbar-nav{
+    .navbar > .navbar-nav{
       display: none !important;
     }
     .navbar-brand img{
-      height: 30px;
+      height: 25px;
     }
     .search-zoom .search-btn-group{
-      width: 100px;
+      width: 70px;
     }
+    .product .size-view .sizes div{
+      margin: 0px;
+  }
+  .accordion-footer-menu span{
+    display: block;
+  }
+  .filter-select{
+    width: 150px !important;
+  }
+  .res-btn{
+    width: 100%;
   }
   
+
+  }
+   
   /* Small devices (landscape phones, 576px and up)*/
   @media (min-width: 576px) and (max-width: 767.98px) {
-    .navbar-nav{
+    .navbar > .navbar-nav{
       display: none !important;
     }
     .navbar{
@@ -31,15 +45,25 @@
     .navbar-brand img{
       height: 30px;
     }
+    .shop-products{
+      width: 90%;
+      margin: 0 auto !important;
+    }
+    .res-btn{
+      width: 100%;
+    }
   }
   
   /* Medium devices (tablets, 768px and up)*/
   @media (min-width: 768px) and (max-width: 991.98px) {
-    .navbar-nav{
+    .navbar > .navbar-nav{
       display: none !important;
     }
     .navbar{
       padding: 0 10% !important;
+    }
+    .res-btn{
+      width: 70%;
     }
   }
   
@@ -48,6 +72,14 @@
     .navbar{
       padding: 0 5% !important;
     }
+    .shop-sidebar{
+      position: relative !important;
+      z-index: 1050 !important;
+      left: 0 !important;
+    }
+    .res-btn{
+      width: 50%;
+    }
   }
   
   /* Extra Large devices (desktops, 992px and up)*/
@@ -55,11 +87,27 @@
     .navbar{
       padding: 0 10% !important;
     }
+    .shop-sidebar{
+      position: relative !important;
+      z-index: 1050 !important;
+      left: 0 !important;
+    }
+    .res-btn{
+      width: 40%;
+    }
   }
   
   /* Extra Extra large devices (large desktops, 1200px and up)*/
   @media (min-width: 1400px) {
     .navbar{
       padding: 0 10% !important;
+    }
+    .shop-sidebar{
+      position: relative !important;
+      z-index: 1050 !important;
+      left: 0 !important;
+    }
+    .res-btn{
+      width: 30%;
     }
   }

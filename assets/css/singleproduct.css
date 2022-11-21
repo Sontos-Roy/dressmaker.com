@@ -1,0 +1,137 @@
+/* product section  */
+.product-col{
+    position: relative;
+}
+.product{
+    position: relative;
+}
+.discount-tag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    z-index: 1050;
+}
+.extra-tag{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 5px 10px;
+    background-color: rgb(3, 184, 184);
+    color: white;
+    z-index: 1050;
+}
+.product-col .product .p-size-img{
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    min-width: 270px !important;
+}
+.product > .p-size-img .image{
+    height: 200px;
+    width: 200px;
+}
+.product > .p-size-img .image img{
+    height: 100%;
+    width: 100%;
+
+}
+.product .p-size-img .size-view{
+    position: absolute;
+    bottom: 0;
+}
+.product .p-size-img .size-view-sm{
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+}
+.product .p-size-img .size-view-sm .sizes div{
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+    text-align: center;
+}
+.product-col .order-now .size-view .sizes div, .product .p-size-img .size-view .sizes div, .product .size-view .sizes div{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin: 5px;
+    transition: 0.4s;
+}
+.product-col .order-now .size-view .sizes div:hover, .product .p-size-img .size-view .sizes div:hover, .product .size-view .sizes div:hover{
+    background-color: navy !important;
+    color: white;
+    cursor: pointer;
+}
+.product .p-size-img .size-view{
+    position: absolute;
+    bottom: -60px;
+    transition: 0.5s;
+}
+.product .p-size-img:hover .size-view{
+    position: absolute;
+    bottom: 0px;
+}
+.quick-view{
+    background-color: #2727279a;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.quantity-product input{
+    width: 40px;    
+}
+.order-now{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1080;
+    display: none;
+}
+.quantity input{
+    outline: none;
+    width: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+}
+.modal-size.size-view .sizes div{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+.modal-size.size-view .sizes div.active{
+    border: 1px solid black !important;
+
+}
+.owl-nav{
+    display: flex;
+    justify-content: center;
+  }
+/* product section  */
+ /* Small devices (landscape phones, 576px and up)*/
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .product-col{
+        width: 48%;
+    }
+  }
+  
+ @media (max-width: 450.98px){
+    
+    .product-col{
+        width: 100%;
+    }
+  }
+
+ @media (min-width: 451px) and (max-width: 575.98px){
+    
+    .product-col{
+        width: 48%;
+    }
+  }
