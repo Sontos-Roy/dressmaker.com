@@ -21,6 +21,9 @@
     .product .size-view .sizes div{
       margin: 0px;
   }
+    .banner{
+        height: 60vh;
+    }
   .accordion-footer-menu span{
     display: block;
   }
