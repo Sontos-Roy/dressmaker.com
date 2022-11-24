@@ -1,7 +1,7 @@
 
 /* banner section start  */
 .banner{
-    height: 80vh;
+    height: auto;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 97%, 52% 97%, 50% 100%, 48% 97%, 0 97%);
 }
@@ -11,8 +11,8 @@
 
 /* category section  */
 .categories-carousel .category{
-    height: 150px;
-    width: 150px;
+    height: auto;
+    width: 140px;
 }
 .categories-carousel .category .image{
     height: 120px;
