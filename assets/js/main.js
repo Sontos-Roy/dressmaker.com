@@ -48,6 +48,10 @@ $(document).ready(function () {
       $(".ava-side-toggler").stop().slideToggle();
       $(this).toggleClass('active');
     })
+    $(".ava-shop-price").on('click', function(){
+      $(".price-range").stop().slideToggle();
+      $(this).toggleClass('active');
+    })
 
 });
 $(window).scroll(function(event){
@@ -161,33 +165,52 @@ $(document).ready(function () {
   });
   $(".products .product-col .product .product-details .product-dec").hide();
   $(".products .product-col .product .product-details .buy-btn").addClass("col-12");
+  $(".products .product-col .product .product-details .order-now").addClass("col-12");
   $("#product-12").click(function (){
-    $(".products .product-col").addClass("col-12");
     $(".products .product-col").removeClass("col-12");
+    $(".products .product-col").addClass("col-6");
     $(".products .product-col").removeClass("col-md-4");
+    $(".products .product-col").addClass("col-md-12");
     $(".products .product-col .product").addClass("d-lg-flex");
     $(".products .product-col .product").addClass("d-md-flex");
     $(".products .product-col .product").addClass("justify-content-between");
     $(".products .product-col .product .product-details .product-dec").fadeIn();
     $(".products .product-col .product .product-details .buy-now").addClass("res-btn");
     $(".products .product-col .product .product-details .buy-now").removeClass("col-12");
-    $(".products .product-col .product .product-details .buy-now").addClass("m-lg-2");
-    $(".products .product-col .product .product-details .order-now").addClass("m-lg-2");
-    $(".products .product-col .product .product-details .order-now").css("width", '300px');
+    $(".products .product-col .product .product-details .buy-now").addClass("ms-lg-2");
+    $(".products .product-col .product .product-details .buy-now").removeClass("ms-lg-0"); 
+    $(".products .product-col .product .product-details .buy-now").addClass("ms-md-2");
+    $(".products .product-col .product .product-details .product-name").removeClass("justify-content-center");
+    $(".products .product-col .product .product-details .product-name").addClass("justify-content-start");
+    $(".products .product-col .product .product-details .price").removeClass("justify-content-center");
+    $(".products .product-col .product .product-details .price").addClass("justify-content-start");
+    $(".products .product-col .product .product-details .price").addClass("ps-md-2");
+    $(".products .product-col .product .product-details .buy-now").removeClass("ms-md-0"); 
+    $(".products .product-col .product .product-details .order-now").addClass("ms-lg-2");
+    $(".products .product-col .product .product-details .order-now").addClass("col-lg-4");
   });
   $("#product-3").click(function (){
-    $(".products .product-col").removeClass("col-12");
+    $(".products .product-col").removeClass("col-6");
     $(".products .product-col").addClass("col-12");
     $(".products .product-col").addClass("col-md-4");
+    $(".products .product-col").removeClass("col-md-12");
     $(".products .product-col .product").removeClass("d-lg-flex");
     $(".products .product-col .product").removeClass("d-md-flex");
     $(".products .product-col .product").removeClass("justify-content-between");
     $(".products .product-col .product .product-details .product-dec").fadeOut();
     $(".products .product-col .product .product-details .buy-now").removeClass("res-btn");
     $(".products .product-col .product .product-details .buy-now").addClass("col-12");
+    $(".products .product-col .product .product-details .buy-now").addClass("ms-lg-0");
     $(".products .product-col .product .product-details .buy-now").removeClass("ms-lg-2");
+    $(".products .product-col .product .product-details .buy-now").addClass("ms-md-0");
+    $(".products .product-col .product .product-details .buy-now").removeClass("ms-md-2");
     $(".products .product-col .product .product-details .order-now").removeClass("ms-lg-2");
-    $(".products .product-col .product .product-details .order-now").css("width", '100%');
+    $(".products .product-col .product .product-details .order-now").removeClass("col-lg-4");
+    $(".products .product-col .product .product-details .product-name").removeClass("justify-content-start");
+    $(".products .product-col .product .product-details .product-name").addClass("justify-content-center");
+    $(".products .product-col .product .product-details .price").removeClass("justify-content-start");
+    $(".products .product-col .product .product-details .price").addClass("justify-content-center");
+    $(".products .product-col .product .product-details .price").removeClass("ps-md-2");
   });
   
 });

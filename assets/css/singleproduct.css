@@ -26,13 +26,10 @@
 .product-col .product .p-size-img{
     position: relative;
     overflow: hidden;
-    height: 300px;
-    min-width: 270px !important;
+    /* height: 300px; */
+    /* min-width: 270px !important; */
 }
-.product > .p-size-img .image{
-    height: 200px;
-    width: 200px;
-}
+
 .product > .p-size-img .image img{
     height: 100%;
     width: 100%;
@@ -83,11 +80,17 @@
 .quantity-product input{
     width: 40px;    
 }
+.product-details .product-name{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .order-now{
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
-    z-index: 1080;
+    z-index: 1060;
     display: none;
 }
 .quantity input{
@@ -115,7 +118,7 @@
   }
 /* product section  */
  /* Small devices (landscape phones, 576px and up)*/
- @media (min-width: 576px) and (max-width: 767.98px) {
+ /* @media (min-width: 576px) and (max-width: 767.98px) {
     
     .product-col{
         width: 48%;
@@ -134,4 +137,4 @@
     .product-col{
         width: 48%;
     }
-  }
+  } */

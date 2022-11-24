@@ -31,7 +31,12 @@
     width: 100%;
   }
   
-
+.product-dec{
+  display: none !important;
+}
+.order-close{
+  display: none !important;
+}
   }
    
   /* Small devices (landscape phones, 576px and up)*/
@@ -52,6 +57,12 @@
     .res-btn{
       width: 100%;
     }
+    .product-dec{
+      display: none !important;
+    }
+    .order-close{
+      display: none !important;
+    }
   }
   
   /* Medium devices (tablets, 768px and up)*/
@@ -65,6 +76,7 @@
     .res-btn{
       width: 70%;
     }
+    
   }
   
   /* Large devices (desktops, 992px and up)*/

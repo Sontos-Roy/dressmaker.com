@@ -267,6 +267,13 @@
   transform: rotate(0deg);
   transition: 0.4s;
 }
+.ava-shop-price.active i{
+  transform: rotate(180deg);
+}
+.ava-shop-price i{
+  transform: rotate(0deg);
+  transition: 0.4s;
+}
 #cat-nav{
   padding: 0;
 }
