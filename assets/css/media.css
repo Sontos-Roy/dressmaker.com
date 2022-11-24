@@ -37,6 +37,13 @@
 .order-close{
   display: none !important;
 }
+.categories-carousel .category .image{
+  height: auto !important;
+  width: 50% !important;
+}
+.categories-carousel .category a p{
+  font-size: 10px;
+}
   }
    
   /* Small devices (landscape phones, 576px and up)*/
@@ -62,6 +69,13 @@
     }
     .order-close{
       display: none !important;
+    }
+    .categories-carousel .category .image{
+      height: auto !important;
+      max-width: 100px !important;
+    }
+    .categories-carousel .category a p{
+      font-size: 10px;
     }
   }
   

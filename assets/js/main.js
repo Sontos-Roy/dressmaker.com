@@ -90,10 +90,13 @@ $(document).ready(function(){
     responsiveClass:true,
     responsive:{
         0:{
-            items:2,
+            items:4,
+        },
+        500:{
+            items:6,
         },
         600:{
-            items:5,
+            items:6,
         },
         1000:{
             items:8,
