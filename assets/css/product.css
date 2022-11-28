@@ -24,34 +24,25 @@
     letter-spacing: 0.15em;
     
     display: inline-block;
-    padding: 15px 20px;
+    padding: 15px;
     position: relative;
     font-family: hind-semi;
     font-weight: bold;
-    color: gray;
+    color: black;
   }
-  .accordion .ac-btn:after {    
-    background: none repeat scroll 0 0 transparent;
-    top: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #1f1f1f;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+
+  .accordion .ac-btn p {
+    font-size: 14px; 
   }
-  .accordion .ac-btn:hover:after { 
-    width: 100%; 
-    left: 0; 
+  .accordion * {
+    font-size: 14px;
   }
   .accordion .ac-btn.active:after { 
     width: 100%; 
     left: 0; 
   }
   .accordion .ac-btn.active { 
-    color: #FF7400 !important;
+    color: #817e7b !important;
   }
   .accordion .ac-btn.active span i{ 
     transform: rotate(180deg);
@@ -64,6 +55,16 @@
   .accordion .tab-content{
     position: relative;
 
+  }
+  .breadcrumb *{
+    font-size: 12px;
+  }
+  .modal-product-details > p, .modal-product-details > p>* {
+    font-size: 12px !important;
+  }
+  .dec-acc ul li{
+    margin: 5px;
+    color: #817e7b;
   }
   
   @media (max-width: 571px){
