@@ -54,6 +54,42 @@ $(document).ready(function () {
     })
 
 });
+$(document).ready(function(){
+  $(".size-view .sizes div").click(function(){
+      $('.size-view .sizes div').removeClass('active');
+      $(this).addClass('active');
+      
+  });
+  var value1 = $('.quantity #quntity-value').val();
+  var value2 = parseInt(value1);
+  $(".quantity .dec").click(function(){
+    value2--;
+    if(value2 > 1){
+        $("#quntity-value").val(value2);
+      }else{
+        value2 = 1;
+        $("#quntity-value").val(value2);
+        
+      }
+  });
+  $(".quantity .inc").click(function(){
+      var qunt = value2++;
+      $("#quntity-value").val(qunt);
+  });
+});
+$(document).ready(function(){
+  $('.buy-form').hide();
+  $('.buy-modal-form').click(function(){
+      $('.modal-details').slideUp();
+      $('.buy-form').slideDown();
+      $(this).hide();
+  })
+  $('.btn-close').click(function(){
+      $('.modal-details').slideDown();
+      $('.buy-form').slideUp();
+      $('.buy-modal-form').show();
+  })
+});
 $(window).scroll(function(event){
     var scroll_pos = $(window).scrollTop()
     if(scroll_pos > 100){
@@ -209,19 +245,15 @@ $(document).ready(function () {
     $(".products .product-col").addClass("col-md-12");
     $(".products .product-col .product").addClass("d-lg-flex");
     $(".products .product-col .product").addClass("d-md-flex");
+    $(".products .product-col .product .p-size-img").addClass("me-md-2");
     $(".products .product-col .product").addClass("justify-content-between");
     $(".products .product-col .product .product-details .product-dec").fadeIn();
     $(".products .product-col .product .product-details .buy-now").addClass("res-btn");
-    $(".products .product-col .product .product-details .buy-now").removeClass("col-12");
-    $(".products .product-col .product .product-details .buy-now").addClass("ms-lg-2");
-    $(".products .product-col .product .product-details .buy-now").removeClass("ms-lg-0"); 
-    $(".products .product-col .product .product-details .buy-now").addClass("ms-md-2");
     $(".products .product-col .product .product-details .product-name").removeClass("justify-content-center");
     $(".products .product-col .product .product-details .product-name").addClass("justify-content-start");
     $(".products .product-col .product .product-details .price").removeClass("justify-content-center");
     $(".products .product-col .product .product-details .price").addClass("justify-content-start");
     $(".products .product-col .product .product-details .price").addClass("ps-md-2");
-    $(".products .product-col .product .product-details .buy-now").removeClass("ms-md-0"); 
     
   });
   $("#product-3").click(function (){
@@ -231,14 +263,10 @@ $(document).ready(function () {
     $(".products .product-col").removeClass("col-md-12");
     $(".products .product-col .product").removeClass("d-lg-flex");
     $(".products .product-col .product").removeClass("d-md-flex");
+    $(".products .product-col .product .p-size-img").removeClass("me-md-2");
     $(".products .product-col .product").removeClass("justify-content-between");
     $(".products .product-col .product .product-details .product-dec").fadeOut();
     $(".products .product-col .product .product-details .buy-now").removeClass("res-btn");
-    $(".products .product-col .product .product-details .buy-now").addClass("col-12");
-    $(".products .product-col .product .product-details .buy-now").addClass("ms-lg-0");
-    $(".products .product-col .product .product-details .buy-now").removeClass("ms-lg-2");
-    $(".products .product-col .product .product-details .buy-now").addClass("ms-md-0");
-    $(".products .product-col .product .product-details .buy-now").removeClass("ms-md-2");
     $(".products .product-col .product .product-details .product-name").removeClass("justify-content-start");
     $(".products .product-col .product .product-details .product-name").addClass("justify-content-center");
     $(".products .product-col .product .product-details .price").removeClass("justify-content-start");

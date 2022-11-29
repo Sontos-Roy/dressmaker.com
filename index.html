@@ -1303,7 +1303,7 @@
         <!-- Modal Body -->
         <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
         <!-- quick view  -->
-        <div class="modal fade" id="quick-view" tabindex="1"  data-bs-keyboard="true" role="dialog" aria-labelledby="quick" aria-hidden="true">
+        <div class="modal fade" id="quick-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="quick" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1338,29 +1338,31 @@
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <a href="product.html" class="text-decoration-none text-dark">
-                                    <h4 class="title bold-7">Cotton Stretch Full Shirt</h4>
-                                </a>
-                                <table>
-                                    <tr>
-                                        <td class="font-12">Brand : </td>
-                                        <td class="ps-1 font-12">Dressmaker</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="font-12">SKU : </td>
-                                        <td class="ps-1 font-12">1460</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="font-12">Availability: </td>
-                                        <td class="ps-1 font-12"> 95 in stock</td>
-                                    </tr>
-                                </table>
-                                <div class="price mt-3">
-                                    <del class="font-18 text-muted bold-7">TK 1800.00</del>
-                                    <span class="text-danger bold-7">TK 1500.00</span>
-                                </div>
-                                <div class="product-details font-12 mt-4">
-                                    Fabric: 95% Cotton, 5% STRETCH S Chest 40 Length 29 Collar 15 (Slim fit) M Chest 42 Length 30 Collar ...
+                                <div class="modal-details">
+                                    <a href="product.html" class="text-decoration-none text-dark">
+                                        <h4 class="title bold-7">Cotton Stretch Full Shirt</h4>
+                                    </a>
+                                    <table>
+                                        <tr>
+                                            <td class="font-12">Brand : </td>
+                                            <td class="ps-1 font-12">Dressmaker</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-12">SKU : </td>
+                                            <td class="ps-1 font-12">1460</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-12">Availability: </td>
+                                            <td class="ps-1 font-12"> 95 in stock</td>
+                                        </tr>
+                                    </table>
+                                    <div class="price mt-3">
+                                        <del class="font-18 text-muted bold-7">TK 1800.00</del>
+                                        <span class="text-danger bold-7">TK 1500.00</span>
+                                    </div>
+                                    <div class="product-details font-12 mt-4">
+                                        Fabric: 95% Cotton, 5% STRETCH S Chest 40 Length 29 Collar 15 (Slim fit) M Chest 42 Length 30 Collar ...
+                                    </div>
                                 </div>
                                 <div class="size-view modal-size col-12">
                                     <div class="d-flex justify-content-between">
@@ -1376,11 +1378,28 @@
                                     </div>
                                 </div>
                                 <div class="quantity d-flex mt-2">
-                                    <button class="btn rounded-0 border border-muted">-</button>
-                                    <input type="text" class="border border-muted text-center rounded-0" value="1">
-                                    <button class="btn rounded-0 border border-muted">+</button>
+                                    <button class="btn rounded-0 border border-muted dec">-</button>
+                                    <input type="text" class="border border-muted text-center rounded-0" value="1" id="quntity-value">
+                                    <button class="btn rounded-0 border border-muted inc">+</button>
                                 </div>
-                                <a href="checkout.html" class="btn btn-outline-dark col-12 mt-2">Buy Now</a>
+                                <div class="buy-form">
+                                    <form action="">
+                                        <div class="mb-3">
+                                            <label for="">Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your Name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="">Phone Number </label>
+                                            <input type="text" class="form-control" placeholder="Enter Your Phone Number">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="">Address </label>
+                                            <input type="text" class="form-control" placeholder="Enter Your Shipping Address">
+                                        </div>
+                                        <button class="btn btn-dark col-12" type="submit">Confirm Order</button>
+                                    </form>
+                                </div>
+                                <button class="btn btn-outline-dark col-12 mt-2 buy-modal-form">Buy Now</button>
                                 <button class="btn btn-outline-danger col-12 mt-2">Add To Cart</button>
                             </div>
                         </div>
