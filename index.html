@@ -1672,6 +1672,114 @@
         </div>
         
         
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light shadow border border-muted rounded-circle btn-lg position-fixed bottom-0 end-0 mb-lg-5 mb-3 me-lg-5 me-3" data-bs-toggle="modal" data-bs-target="#view-cart">
+          <i class="fas fa-cart-arrow-down"></i><small class="badge bg-primary badge-sm rounded-circle position-absolute end-0" style="top: -10px;">2</small>
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="view-cart" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId">View Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="border border-dark border-end-0 border-top-0 border-start-0">
+                                        <tr>
+                                            <th scope="col">&nbsp;</th>
+                                            <th scope="col">&nbsp;</th>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border border-muted border-end-0 border-top-0 border-start-0">
+                                            <td>
+                                                    <div class="remove">
+                                                        <button class="btn">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                    </div>
+                                            </td>
+                                            <td>
+                                                <div class="thambnail">
+                                                    <img src="assets/images/category/baby_tshirt.webp" alt="" width="80">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-name">
+                                                    <a href="product.html" class="text-decoration-none text-dark font-12">
+                                                        China Luxury Polo Shirt
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-price" data-title="Price">
+                                                    <p class="text-muted"><del>999৳</del> <span class="text-danger">250৳</span></p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="quantity d-flex">
+                                                    <button class="btn rounded-0 border border-muted dec">-</button>
+                                                    <input type="text" class="border border-muted text-center rounded-0" value="1" id="quntity-value">
+                                                    <button class="btn rounded-0 border border-muted inc">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="subtotal" title="subtotal">
+                                                    <p class="main-color">
+                                                        500 ৳
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="">Name</label>
+                                    <input type="text" class="form-control shadow-none" placeholder="Enter Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Phone Number </label>
+                                    <input type="text" class="form-control shadow-none" placeholder="Enter Your Phone Number">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="">Address </label>
+                                    <input type="text" class="form-control shadow-none" placeholder="Enter Your Shipping Address">
+                                </div>
+                                <button class="btn btn-dark col-12" type="submit">Confirm Order</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var modalId = document.getElementById('view-cart');
+        
+            modalId.addEventListener('show.bs.modal', function (event) {
+                  // Button that triggered the modal
+                  let button = event.relatedTarget;
+                  // Extract info from data-bs-* attributes
+                  let recipient = button.getAttribute('data-bs-whatever');
+        
+                // Use above variables to manipulate the DOM
+            });
+        </script>
         
         
         
