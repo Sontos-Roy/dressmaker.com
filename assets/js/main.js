@@ -58,7 +58,8 @@ $(document).ready(function(){
   $(".size-view .sizes div").click(function(){
       $('.size-view .sizes div').removeClass('active');
       $(this).addClass('active');
-      
+      var value = $(this).text();
+      $('#sizes').text(value);
   });
   var value1 = $('.quantity #quntity-value').val();
   var value2 = parseInt(value1);
@@ -122,6 +123,8 @@ $(document).ready(function(){
     arrows: false,
     fade: true,
     arrows: true,
+    prevArrow:"<button type='button' class='slick-prev pull-left border-0 btn text-dark'><i class='fas fa-angle-left'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right border-0 btn text-dark'><i class='fas fa-angle-right'></i></button>",
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
@@ -130,8 +133,10 @@ $(document).ready(function(){
     asNavFor: '.silk-carousel',
     dots: true,
     centerMode: true,
-    centerPadding: "20px",
-    focusOnSelect: true
+    centerPadding: "0",
+    focusOnSelect: true,
+    prevArrow:"<button type='button' class='slick-prev pull-left btn text-dark'><i class='fas fa-angle-left'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right btn text-dark'><i class='fas fa-angle-right'></i></button>"
   });
   $('#quick-view').on('shown.bs.modal', function() {
     $('.silk-carousel').slick('setPosition');
@@ -303,4 +308,13 @@ $(document).ready(function(){
   })
 })
 
+Fancybox.getInstance().getSlide().Panzoom.toggleZoom();
+                            Fancybox.bind("[data-fancybox]", {
+                                Panzoom: {
+                                    zoomFriction: 0.7,
+                                    maxScale: function () {
+                                      return 5;
+                                    },
+                                  },
+                              });
 const myModal = new bootstrap.Modal(document.getElementById('quick-view'), options)

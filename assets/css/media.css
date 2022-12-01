@@ -85,7 +85,7 @@
       display: none !important;
     }
     .navbar{
-      padding: 0 10% !important;
+      padding: 0 5% !important;
     }
     .res-btn{
       width: 70%;
@@ -111,7 +111,7 @@
   /* Extra Large devices (desktops, 992px and up)*/
   @media (min-width: 1200px) and (max-width: 1399.98px) {
     .navbar{
-      padding: 0 10% !important;
+      padding: 0 5% !important;
     }
     .shop-sidebar{
       position: relative !important;
@@ -126,7 +126,10 @@
   /* Extra Extra large devices (large desktops, 1200px and up)*/
   @media (min-width: 1400px) {
     .navbar{
-      padding: 0 10% !important;
+      padding: 0 2% !important;
+    }
+    .navbar-brand img{
+      height: 56px;
     }
     .shop-sidebar{
       position: relative !important;

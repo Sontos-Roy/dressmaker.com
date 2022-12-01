@@ -22,7 +22,7 @@ html, body{
     --font-12: 12px;
 
     /* colors  */
-    --black: #3c3c3c;
+    --black: rgb(0, 0, 0);
     --white: rgb(247, 247, 247);
 }
 
@@ -59,7 +59,9 @@ html, body{
 .ls-2{
     letter-spacing: 2px;
 }
-
+.bg-black{
+    background: var(--black);
+}
 .align-item-center{
     align-items: center !important;
 }
@@ -68,6 +70,10 @@ html, body{
 }
 .align-item-between{
     align-items: stretch;
+}
+
+.fancybox__container{
+    z-index: 3050;
 }
 
 .btn-hover-warning:hover{
@@ -83,7 +89,7 @@ html, body{
     color: white;
 }
 .modal{
-    z-index: 9999;
+    z-index: 2020;
 }
 .main-wapper{
     height: 100%;
@@ -475,14 +481,14 @@ html, body{
 
 /* footer section  */
 footer{
-    background: black;
+    background: var(--black);
     padding: 1.5rem;
   }
   /* footer .row div img{
     filter: brightness( 0% ) contrast( 0% ) saturate( 102% ) blur( 0px ) hue-rotate( 0deg );
   } */
   .accordion .ac-btn.active { 
-    color: #FF7400 !important;
+    color: #7a7a7a !important;
   }
   .accordion .ac-btn.active span i{ 
     transform: rotate(180deg);
@@ -527,7 +533,7 @@ footer{
   }
   .footer-menu-col ul li a{
     text-decoration: none;
-    color: gray;
+    color: rgb(145, 145, 145);
     transition: 0.2s;
     font-size: 13px;
     position: relative;
