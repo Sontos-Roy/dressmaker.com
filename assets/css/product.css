@@ -66,6 +66,16 @@
     margin: 5px;
     color: #817e7b;
   }
+  .silk-carousel{
+    padding-right: 2px;
+  }
+  .slider-nav div img{
+    padding-top: 5px;
+    padding-right: 5px !important;
+  }
+  .slider-nav div:last-child img{
+    /* padding-right: 0 !important; */
+  }
   
   @media (max-width: 571px){
     .products-options a{
