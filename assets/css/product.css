@@ -42,7 +42,7 @@
     left: 0; 
   }
   .accordion .ac-btn.active { 
-    color: #817e7b !important;
+    color: #000000 !important;
   }
   .accordion .ac-btn.active span i{ 
     transform: rotate(180deg);
