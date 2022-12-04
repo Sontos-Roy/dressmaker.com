@@ -123,8 +123,6 @@ $(document).ready(function(){
     arrows: false,
     fade: true,
     arrows: true,
-    prevArrow:"<button type='button' class='slick-prev pull-left border-0 btn text-dark'><i class='fas fa-angle-left'></i></button>",
-    nextArrow:"<button type='button' class='slick-next pull-right border-0 btn text-dark'><i class='fas fa-angle-right'></i></button>",
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
@@ -135,6 +133,7 @@ $(document).ready(function(){
     centerMode: true,
     centerPadding: "0",
     focusOnSelect: true,
+    infinite: true,
     prevArrow:"<button type='button' class='slick-prev pull-left btn text-dark'><i class='fas fa-angle-left'></i></button>",
     nextArrow:"<button type='button' class='slick-next pull-right btn text-dark'><i class='fas fa-angle-right'></i></button>"
   });
