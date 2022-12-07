@@ -246,7 +246,7 @@ html, body{
     padding: 10px;
 }
 .dpdown .dropdown-menu li a:hover{
-    color: gray;
+    color: rgb(194, 194, 194) !important;
 }
 .dpdown:hover .dropdown-menu{
     display: block;
