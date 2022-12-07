@@ -306,6 +306,22 @@ $(document).ready(function(){
     $(".checkout-product-price").stop().slideToggle();
   })
 })
+$(document).scroll(function(){
+
+  var scroll_pos = $(window).scrollTop()
+if(scroll_pos > 200){
+  $("#scroll-top").fadeIn("medium");
+  $("#navbar").slideDown("medium");
+  $("#scroll-top").on("click", function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+
+}else{
+$("#scroll-top").fadeOut("medium");
+$("#navbar").slideUp("medium");
+}
+});
+
 
 Fancybox.getInstance().getSlide().Panzoom.toggleZoom();
                             Fancybox.bind("[data-fancybox]", {

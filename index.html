@@ -1374,7 +1374,7 @@
         
         
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-light shadow border border-muted rounded-circle btn-lg position-fixed bottom-0 end-0 mb-lg-5 mb-3 me-lg-5 me-3" data-bs-toggle="modal" data-bs-target="#view-cart" style="z-index: 1070;">
+        <button type="button" class="btn cart-fixed btn-light shadow border border-muted rounded-circle btn-lg position-fixed" data-bs-toggle="modal" data-bs-target="#view-cart" style="z-index: 1070;">
           <i class="fas fa-cart-arrow-down"></i><small class="badge bg-primary badge-sm rounded-circle position-absolute end-0 font-12" style="top: -10px;">2</small>
         </button>
         
@@ -1482,12 +1482,16 @@
             });
         </script>
         
-        
+        <button class="fixed-scroll-bottom" id="scroll-top" style="">
+            <span>
+                <i class="fas fa-angle-up"></i>
+            </span>
+        </button>
         
         
         <!-- footer section start  -->
         <footer>
-            <div class="row border border-muted border-end-0 border-start-0 border-top-0 mt-5">
+            <div class="row mt-5">
                 <div class="col-lg-4 col-md-12 col-12">
                     <img src="assets/images/logo/white-trans-Header.webp" alt="logo" height="30">
                     <p class="text-start">
@@ -1579,13 +1583,13 @@
                     <div class="col-lg-3 col-md-12 col-12">
                         <div class="footer-menu-col">
                         <a href="#" class="text-light ps-0"><b>Newsletter Sign Up</b></a>
-                        <p class="text-muted font-13">
+                        <p class="text-light font-13">
                             Receive our latest updates about our products and promotions.
                         </p>
                         <form action="" class="mt-3">
                             <div class="mb-3">
                                 <input type="text" placeholder="Your E-mail" class="form-control">
-                                <button class="text-center p-1 col-12 btn-hover-warning btn btn-warning mt-3"><i class="fas fa-arrow-right"></i></button>
+                                <button class="text-center p-3 font-13 text-dark bold-5 col-12 btn-hover-warning btn btn-warning mt-3">SUBMIT</button>
                             </div>
                         </form>
                     </div>

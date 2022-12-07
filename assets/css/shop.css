@@ -5,6 +5,13 @@
     border-radius: 20px;
     outline: none;
   }
+  select.filter-select option{
+    background-color: whitesmoke;
+  }
+  select.filter-select option:hover{
+    background: rgb(109, 109, 109) !important; 
+    color: white;
+  }
   
 /* Reset style for input range */
 .price-field {

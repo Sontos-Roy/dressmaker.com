@@ -477,7 +477,32 @@ html, body{
     margin-left: 20px;
 }
 /* section title */
-
+.cart-fixed{
+    bottom: 4.5rem;
+    right: 20px;
+}
+.fixed-scroll-bottom {
+    position: fixed;
+    bottom: 1rem;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    box-shadow: gray 2px 2px 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-size: 20px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: white;
+    border-radius: 50px;
+    transition: all 0.5s ease 0s;
+}
 
 /* footer section  */
 footer{
@@ -502,10 +527,10 @@ footer{
     display: none;
   }
   footer .row div p{
-    font-size: 15px;
-    font-family: hind-reg;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
-    color: gray;
+    color: rgb(230, 230, 230);
   }
   .footer-menu-col ul{
     padding: 0;
@@ -533,7 +558,7 @@ footer{
   }
   .footer-menu-col ul li a{
     text-decoration: none;
-    color: rgb(145, 145, 145);
+    color: rgb(207, 207, 207);
     transition: 0.2s;
     font-size: 13px;
     position: relative;
@@ -550,7 +575,7 @@ footer{
     transition: 0.3s;
   }
   .footer-menu-col ul li a:hover{
-    color: var(--main-color);
+    color: white;
     transition: 0.2s;
   }
   .footer-menu-col ul li a:hover::before{
@@ -569,8 +594,9 @@ footer{
   }
   footer .row div form input{
     border: none;
-    background: rgb(207, 207, 207);
-    padding: 5px;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    font-size: 12px;
   }
   footer .row div form input:focus{
     border: none;
@@ -586,6 +612,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
     width: 40px;
     height: 40px;
   } 
